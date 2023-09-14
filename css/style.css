@@ -1,0 +1,100 @@
+:root {
+  --primary: #C6493A;
+  --secondary: #679755;
+  --light: #F6F4F9;
+  --dark: #1c1e26;
+}
+
+html {
+  font-size: 1vw;
+}
+
+.fa-std {
+  font-family: 'Fira Code', monospace;
+}
+
+body {
+  color: var(--light);
+  font-family: Helvetica, monospace;
+  background-color: var(--dark);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.container-xxl {
+  margin: auto;
+  width: 60%;
+  min-width: 300px;
+}
+
+.mb-0{
+  margin-bottom: 0px;
+}
+
+.mt-0{
+  margin-top: 0px;
+}
+
+.mt-10{
+  margin-top: 20px;
+}
+
+.links_holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: var(--secondary);
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.underline_primary {
+  text-decoration: underline var(--primary);
+}
+
+
+
+/* Media query for screens with a maximum width of 767px (small screens) */
+@media screen and (max-width: 767px) {
+  .container-xxl {
+    width: 100%;
+  }
+
+  /* Scale font size to the viewport width (vw) */
+  body {
+    font-size: 4vw;
+  }
+
+  /* Scale margins and padding to the viewport width (vw) */
+  .mt-5px, .mb-5px {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .links_holder {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+    color: var(--secondary);
+    font-weight: lighter;
+    text-decoration: none;
+  }
+}
