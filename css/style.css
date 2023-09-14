@@ -1,6 +1,7 @@
 :root {
   --primary: #C6493A;
   --secondary: #679755;
+  --links: #a169bf;
   --light: #F6F4F9;
   --dark: #1c1e26;
 }
@@ -9,13 +10,38 @@ html {
   font-size: 1vw;
 }
 
+@font-face {
+  font-family: 'RegularFont';
+  src: url('fonts/FiraCode_400Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LightFont';
+  src: url('fonts/FiraCode_300Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MediumFont';
+  src: url('fonts/FiraCode_500Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BoldFont';
+  src: url('fonts/FiraCode_700Bold.ttf') format('truetype');
+}
+
 .fa-std {
-  font-family: 'Fira Code', monospace;
+  font-family: 'RegularFont', monospace;
+}
+
+.fa-bold {
+  font-family: 'BoldFont', monospace;
+  font-weight: bold;
 }
 
 body {
   color: var(--light);
-  font-family: Helvetica, monospace;
+  font-family: 'RegularFont', monospace;
   background-color: var(--dark);
 }
 
@@ -53,6 +79,14 @@ body {
   margin-top: 20px;
 }
 
+.mt-5px {
+  margin-top: 5px;
+}
+
+.mb-5px {
+  margin-bottom: 5px;
+}
+
 .links_holder {
   display: flex;
   justify-content: space-between;
@@ -66,8 +100,25 @@ body {
 
 .underline_primary {
   text-decoration: underline var(--primary);
+  /* You can also adjust the space using the `text-underline-offset` property */
+  text-underline-offset: 10%; /* Adjust this value as needed */
 }
 
+.underline_secondary {
+  text-decoration: underline var(--secondary);
+  text-decoration-skip-ink: auto;
+  /* You can also adjust the space using the `text-underline-offset` property */
+  text-underline-offset: 10%; /* Adjust this value as needed */
+}
+
+.underline_links {
+  text-decoration: underline var(--links);
+   text-underline-offset:10%;
+}
+
+.ml-tab {
+  margin-left: 5%;
+}
 
 
 /* Media query for screens with a maximum width of 767px (small screens) */
@@ -79,12 +130,6 @@ body {
   /* Scale font size to the viewport width (vw) */
   body {
     font-size: 4vw;
-  }
-
-  /* Scale margins and padding to the viewport width (vw) */
-  .mt-5px, .mb-5px {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
   }
 
   .links_holder {
