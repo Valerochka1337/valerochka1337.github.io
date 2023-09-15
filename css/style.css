@@ -99,21 +99,27 @@ body {
 }
 
 .underline_primary {
-  text-decoration: underline var(--primary);
-  /* You can also adjust the space using the `text-underline-offset` property */
-  text-underline-offset: 10%; /* Adjust this value as needed */
+  text-decoration: underline solid var(--primary);
+  text-underline-offset: 10%;
+  -webkit-text-decoration-line:  underline;
+  -webkit-text-decoration-color: var(--primary);
+  -webkit-text-decoration-style: solid;
 }
 
 .underline_secondary {
   text-decoration: underline var(--secondary);
-  text-decoration-skip-ink: auto;
-  /* You can also adjust the space using the `text-underline-offset` property */
-  text-underline-offset: 10%; /* Adjust this value as needed */
+  text-underline-offset: 10%;
+  -webkit-text-decoration-line:  underline;
+  -webkit-text-decoration-color: var(--secondary);
+  -webkit-text-decoration-style: solid;
 }
 
 .underline_links {
   text-decoration: underline var(--links);
-   text-underline-offset:10%;
+  text-underline-offset:10%;
+  -webkit-text-decoration-line:  underline;
+  -webkit-text-decoration-color: var(--links);
+  -webkit-text-decoration-style: solid;
 }
 
 .ml-tab {
