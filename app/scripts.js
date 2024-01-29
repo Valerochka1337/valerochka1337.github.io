@@ -67,9 +67,9 @@ function switchLanguage(lang) {
     document.querySelector('#skills').textContent = 'Skills';
     document.querySelector('#skills-languages').textContent = 'Languages';
     document.querySelector('#skills-languages-russian').textContent = 'Russian ';
-    document.querySelector('#skills-languages-russian-level').textContent = ' - Native';
+    document.querySelector('#skills-languages-russian-level').textContent = '\u00A0- Native';
     document.querySelector('#skills-languages-english').textContent = 'English ';
-    document.querySelector('#skills-languages-english-level').textContent = ' - Advanced (C1)';
+    document.querySelector('#skills-languages-english-level').textContent = '\u00A0- Advanced (C1)';
 
   } else if(lang === 'ru') {
 
@@ -106,8 +106,8 @@ function switchLanguage(lang) {
     document.querySelector('#skills').textContent = 'Навыки';
     document.querySelector('#skills-languages').textContent = 'Языки';
     document.querySelector('#skills-languages-russian').textContent = 'Русский';
-    document.querySelector('#skills-languages-russian-level').textContent = '- Родной';
+    document.querySelector('#skills-languages-russian-level').textContent = '\u00A0- Родной';
     document.querySelector('#skills-languages-english').textContent = 'Английский';
-    document.querySelector('#skills-languages-english-level').textContent = '- Уровень носителя (C1)';
+    document.querySelector('#skills-languages-english-level').textContent = '\u00A0- Уровень носителя (C1)';
   }
 }
