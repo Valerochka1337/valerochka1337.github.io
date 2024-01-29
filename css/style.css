@@ -149,3 +149,31 @@ body {
     text-decoration: none;
   }
 }
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lang-btn {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 1em;
+  background-color: #222;
+}
+
+#lang-en[href*="lang=en"] {
+  font-weight: bold;
+  background-color: #a169bf;
+}

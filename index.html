@@ -1,79 +1,87 @@
 <!doctype html>
 <html lang="en" class="bg-dark">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Valera Yartsev</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title id="title" >Valera Yartsev</title>
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="bg-dark">
+  <!-- Language switcher start -->
+  <header class="header">
+    <div class="language-switcher">
+      <a href="?lang=en" class="lang-btn" id="lang-en">EN</a>
+      <a href="?lang=ru" class="lang-btn" id="lang-ru">RU</a>
+    </div>
+  </header>
+  <!-- Language switcher end -->
 
   <!-- About start -->
   <div class="container-xxl">
-    <h2 class="fa-bold mb-0">About</h2>
-    <p class="fa-std mt-0">Hey! I'm Valerii Yartsev, and I'm junior backend developer. I specialize in backend development with C++/Python. If you are interested in working with me, feel free to message me using the contacts bellow!</p>
+    <h2 id="about" class="fa-bold mb-0">About</h2>
+    <p id="about-content" class="fa-std mt-0">Hey! I'm Valerii Yartsev, and I'm a junior backend developer. I specialize in backend development with C++/Python. If you are interested in working with me, feel free to message me using the contacts bellow!</p>
   </div>
   <!-- About end -->
 
   <!-- Links start -->
   <div class="container-xxl mb-0">
-    <h2 class="fa-bold mb-0">Contacts && Links</h2>
+    <h2 id="links" class="fa-bold mb-0">Contacts && Links</h2>
     <div class="links_holder fa-std">
-      <a class="link" href="https://t.me/valerochka1337">Telegram</a>
-      <a class="link" href="mailto:valerochkayartsev88@gmail.com?">Email</a>
-      <a class="link" href="https://github.com/Valerochka1337">GitHub</a>
-      <a class="link" href="https://docs.google.com/document/d/1xNML53K5rPfALX9Jn6rA0lZqXj-dWSjLfOPuigutqcw">Resume</a>
+      <a id="links-telegram" class="link" href="https://t.me/valerochka1337">Telegram</a>
+      <a id="links-email" class="link" href="mailto:valerochkayartsev88@gmail.com?">Email</a>
+      <a id="links-github" class="link" href="https://github.com/Valerochka1337">GitHub</a>
+      <a id="links-resume" class="link" href="https://docs.google.com/document/d/1xNML53K5rPfALX9Jn6rA0lZqXj-dWSjLfOPuigutqcw">Resume</a>
     </div>
   </div>
   <!-- Links end -->
 
   <!-- Experience start -->
   <div class="container-xxl">
-      <h2 class="fa-bold mb-0">Experience</h2>
+      <h2 id="experience" class="fa-bold mb-0">Experience</h2>
 
     <div class = "fa-std" style="display: flex;">
-        <p class="underline_primary mt-0 mb-0">Yandex</p>
+        <p id="experience-title" class="underline_primary mt-0 mb-0">Yandex</p>
         <p class="mt-0  mb-0" style="margin-right: 10px">,</p>
         <a class="link  mb-0" href="https://yandex.com">https://yandex.com</a>
         <p class="mt-0 mb-0">,</p>
       </div>
-      <p class="fa-bold mt-5px mb-0 ml-tab underline_links">Intern C++ backend</p>
+      <p id="experience-content-1-position" class="fa-bold mt-5px mb-0 ml-tab underline_links">Intern C++ backend</p>
       <p class="fa-std mt-0 ml-tab" id="job1-period">(11, 2022-...), 1 month</p>
-      <p class="fa-std mt-0 ml-tab">Worked on several Yandex.Market projects (data indexing, yandex plus). Have built full CI for CRON tasks. Developed handlers for API's using USERVER. Have written lots of complicated SQL-queries. </p>
+      <p id="experience-content-1-description" class="fa-std mt-0 ml-tab">Worked on several Yandex.Market projects (data indexing, yandex plus). Have built full CI for CRON tasks. Developed handlers for API's using USERVER. Have written lots of complicated SQL-queries.</p>
 
   </div>
   <!-- Experience end -->
 
   <!-- Education start -->
   <div class="container-xxl">
-      <h2 class="fa-bold mb-0">Education</h2>
+      <h2 id="education" class="fa-bold mb-0">Education</h2>
       <div class = "fa-std" style="display: flex;">
-        <p class="underline_primary mt-0 mb-0">ITMO University</p>
+        <p id="education-content-1-title" class="underline_primary mt-0 mb-0">ITMO University</p>
         <p class="mt-0  mb-0">,</p>
       </div>
-      <p class="fa-bold mt-5px mb-0 ml-tab underline_links">Bachelor</p>
+      <p id="education-content-1-position" class="fa-bold mt-5px mb-0 ml-tab underline_links">Bachelor</p>
       <p class="fa-std mt-0 mb-0 ml-tab" id="university-period">(9, 2022-...), 12 months</p>
-      <p class="fa-std mt-0 ml-tab">Information Systems and Technologies</p>
-      <p class="fa-std mt-0 ml-tab">Algorithms and Data Structures, Oriented programming in C++, Programming patterns in C#, development technologies in Java, DB, GIT, Soft-Skills and team-building.</p>
+      <p id="education-content-1-faculty" class="fa-std mt-0 ml-tab">Information Systems and Technologies</p>
+      <p id="education-content-1-description" class="fa-std mt-0 ml-tab">Algorithms and Data Structures, Oriented programming in C++, Programming patterns in C#, development technologies in Java, DB, GIT, Soft-Skills and team-building.</p>
   </div>
   <!-- Education end -->
 
   <!-- Skills start -->
   <div class="container-xxl">
-    <h2 class="fa-bold mb-0">Skills</h2>
+    <h2 id="skills" class="fa-bold mb-0">Skills</h2>
     <div class = "fa-std" style="display: flex;">
-      <p class="underline_primary mt-0 mb-0">Languages</p>
+      <p id="skills-languages" class="underline_primary mt-0 mb-0">Languages</p>
       <p class="mt-0  mb-0">:</p>
     </div>
     <div style="display: flex;">
-      <p class="fa-bold mt-5px mb-0 ml-tab underline_links">Russian</p>
-      <p class="fa-std mt-5px mb-0">&nbsp;- Native</p>
+      <p id="skills-languages-russian" class="fa-bold mt-5px mb-0 ml-tab underline_links">Russian</p>
+      <p id="skills-languages-russian-level" class="fa-std mt-5px mb-0">&nbsp;- Native</p>
     </div>
     <div style="display: flex;">
-      <p class="fa-bold mt-5px mb-0 ml-tab underline_links">English</p>
-      <p class="fa-std mt-5px mb-0">&nbsp;- Advanced (C1)</p>
+      <p id="skills-languages-english" class="fa-bold mt-5px mb-0 ml-tab underline_links">English</p>
+      <p id="skills-languages-english-level" class="fa-std mt-5px mb-0">&nbsp;- Advanced (C1)</p>
     </div>
   </div>
   <!-- Skills end -->
