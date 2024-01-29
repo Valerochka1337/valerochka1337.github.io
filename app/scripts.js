@@ -81,7 +81,7 @@ function switchLanguage(lang) {
     document.querySelector('#title').textContent = 'Ярцев Валерий';
 
     document.querySelector('#about').textContent = 'Обо мне';
-    document.querySelector('#about-content').textContent = 'Привет! Меня зовут Ярцев Валерий, и я джуниор С++/Python бэкенд-разработчик. С предложениями по работы вы всегда можете связаться со мной по ссылкам ниже!';
+    document.querySelector('#about-content').textContent = 'Привет! Меня зовут Ярцев Валерий, и я джуниор С++/Python бэкенд-разработчик. С предложениями по работе вы всегда можете связаться со мной по ссылкам ниже!';
 
     document.querySelector('#links').textContent = 'Контакты';
     document.querySelector('#links-telegram').textContent = 'Телеграмм';
